@@ -36,7 +36,7 @@ public static class ApiServiceFactory
     }
 }
 
-// Exemplo de como o código cliente iterage com o padrão
+// Exemplo de como o código cliente interage com o padrão
 public class ClientCode
 {
     // Obtêm uma implementação de IApiService por meio do ApiServiceFactory

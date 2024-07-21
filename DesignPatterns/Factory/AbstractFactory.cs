@@ -50,7 +50,7 @@ public class ApiServiceTwoFactory : IApiServiceFactory
     }
 }
 
-// Exemplo de como o código cliente iterage com o padrão
+// Exemplo de como o código cliente interage com o padrão
 public class ClientCode
 {
     // Recebe IApiServiceFactory que possibilita construir uma implementação de IApiService
