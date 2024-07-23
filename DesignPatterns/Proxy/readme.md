@@ -12,4 +12,4 @@ Exemplo de uso do padrão Proxy.
 2. O código cliente deve passa a chamar ProductCatalogProxy ao invés de ProductCatalogService
 3. O proxy passa a manipular as chamadas ao cache e ao ProductCatalogService
 
-**Resultado final**: 
+**Resultado final**: o código cliente e o serviço base permanecem isolados do serviço de cache. Além disso, a operação de cache é transparente para ambos. Se em algum momento for decidido que o cache não é mais necessário, basta volta a fornecer uma instância de ProductCatalogService ao código cliente.
