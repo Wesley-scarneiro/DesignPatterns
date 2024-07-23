@@ -66,3 +66,13 @@ public class ProductCatalogProxy : IProductCatalogService
         return response;
     }
 }
+
+public class ClientCode
+{
+    // Código cliente que passa a manipular o proxy e não mais ProductCatalogService
+    public static void Consumer(ProductCatalogProxy proxy)
+    {
+        var response = proxy.GetCatalog();
+        Console.WriteLine($"Catalog: {response}");
+    }
+}
