@@ -36,9 +36,17 @@ public class AdapterProviderAWS : IFileService
 // Código cliente
 public class ClientCode {
 
+    // Chamando o consumidor
+    public void Call()
+    {
+        var adapter = new AdapterProviderAWS(new ProviderAWS());
+        Consumer(adapter);
+    }
+
     // Recebe uma adaptador que implementa IFileService
     public void Consumer(IFileService service)
     {
         var stream = service.GetFile();
     }
+
 }
