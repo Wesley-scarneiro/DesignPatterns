@@ -19,8 +19,7 @@
     {
         public IEnumerable<Data> Sort(IEnumerable<Data> data)
         {
-            // Implementa ordenação
-            return data;
+            return data.OrderBy(d => d.Id);
         }
     }
 
@@ -29,8 +28,7 @@
     {
         public IEnumerable<Data> Sort(IEnumerable<Data> data)
         {
-            // Implementa ordenação
-            return data;
+            return data.OrderBy(d => d.Name);
         }
     }
 
@@ -39,8 +37,7 @@
     {
         public IEnumerable<Data> Sort(IEnumerable<Data> data)
         {
-            // Implementa ordenação
-            return data;
+            return data.OrderBy(d => d.Age);
         }
     }
 
