@@ -2,21 +2,21 @@
 
 Exemplos de uso do Template Method Pattern.
 
-**Contexto**: uma aplicação realiza o processamento da folha de pagamento de funcionários públicos e CLTs. A fim de refatorar o
-sistema, deseja-se ter métodos base pré-definidos para serem usados pelas subclasses que serão criadas - uma para funcionário
-público e outra para funcionário CLT. No cálculo do salário líquido final, as subclasses devem calcular o desconto da previdência,
-plano de saúde e outros descontos.
+**Contexto**: uma aplicaÃ§Ã£o realiza o processamento da folha de pagamento de funcionÃ¡rios pÃºblicos e CLTs. A fim de refatorar o
+sistema, deseja-se ter mÃ©todos base prÃ©-definidos para serem usados pelas subclasses que serÃ£o criadas - uma para funcionÃ¡rio
+pÃºblico e outra para funcionÃ¡rio CLT. No cÃ¡lculo do salÃ¡rio lÃ­quido final, as subclasses devem calcular o desconto da previdÃªncia,
+plano de saÃºde e outros descontos.
 
-**Problema**: como garantir que as subclasses implementem todas as operações intermediárias necessárias, mas que não tenham 
-a necessidade de implementar o método do cálculo do salário líquido final?
+**Problema**: como garantir que as subclasses implementem todas as operaÃ§Ãµes intermediÃ¡rias necessÃ¡rias, mas que nÃ£o tenham 
+a necessidade de implementar o mÃ©todo do cÃ¡lculo do salÃ¡rio lÃ­quido final?
 
-# Solução
+# SoluÃ§Ã£o
 
-1. Criar uma classe base abstrata que será herdada pelas subclasses
-2. A classe base exige a implementação das operações intermediárias para as subclasses
-3. As subclasses implementam somente as operações intermediárias
-4. A classe base implementa o cálculo do salário líquido, chamando as implementações das subclasses 
+1. Criar uma classe base abstrata que serÃ¡ herdada pelas subclasses
+2. A classe base exige a implementaÃ§Ã£o das operaÃ§Ãµes intermediÃ¡rias para as subclasses
+3. As subclasses implementam somente as operaÃ§Ãµes intermediÃ¡rias
+4. A classe base implementa o cÃ¡lculo do salÃ¡rio lÃ­quido, chamando as implementaÃ§Ãµes das subclasses 
 
-**Resultado**: as subclasses passam a ter a responsabilidade de implementar somente as operações
-intermediárias para o cálculo do salário líquido. A classe base fornece o método final que utilizará
-as implementações das subclasses, garantindo o cálculo correto para cada caso.
+**Resultado**: as subclasses passam a ter a responsabilidade de implementar somente as operaÃ§Ãµes
+intermediÃ¡rias para o cÃ¡lculo do salÃ¡rio lÃ­quido. A classe base fornece o mÃ©todo final que utilizarÃ¡
+as implementaÃ§Ãµes das subclasses (inversÃ£o de controle), garantindo o cÃ¡lculo correto para cada caso.
