@@ -22,6 +22,6 @@ Cada padrão de projeto estudado apresenta um contexto, problema e solução ond
 
 ## Bibliografia
 
-Marco Tulio Valente. Engenharia de Software Moderna: Princípios e Práticas para Desenvolvimento de Software com Produtividade, Editora: Independente, 2020
+Marco Tulio Valente. Engenharia de Software Moderna: Princípios e Práticas para Desenvolvimento de Software com Produtividade, Editora: Independente, 2020  
 https://engsoftmoderna.info/cap6.html
 
