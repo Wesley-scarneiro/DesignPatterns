@@ -5,16 +5,16 @@ Cada padrão de projeto estudado apresenta um contexto, problema e solução ond
 
 ## Tipos de padrões
 
-* Criacionistas: soluções flexíveis para a criação de objetos
+* **Criacionistas**: soluções flexíveis para a criação de objetos
   - Singleton
   - Abstract Factory
   - Factory Method
-* Comportamentais: soluções flexíveis e extensíveis para a composição de classes
+* **Comportamentais**: soluções flexíveis e extensíveis para a composição de classes
   - Proxy
   - Adapter
   - Facade
   - Decorador
-* Estruturais: soluções flexíveis para iteração e divisão de responsabilidades entre classes
+* **Estruturais**: soluções flexíveis para iteração e divisão de responsabilidades entre classes
   - Strategy
   - Observer
   - Template Method
